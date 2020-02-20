@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="contact.css">
-  </head>
-  <body>
-    <h4 id="title">
-      <a href="index.html">Robin Fussell  &lt/&gt</a>   
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robin Fussell</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="about.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+
+<body>
+
+  <h4 id="title">
+    <span id="name"><a href="index.html">Robin Fussell &lt/&gt</a></span>
       <div class="navbar">
         <a href="index.html">Projects </a>
         <a href="about.html">About </a>
-        <a href="contact.html">Contact </a>
-      </h4>
+        <a href="contact.html" class='active-page'>Contact </a>
     </div>
-    <div class="form-body">
+  </h4>
+  
+
+  <div class="form-body">
     <form id="form">
+      <h3>CONTACT</h3>
       <div id="form-container"></div>
       <form-group>
-        <label for="fname">First name:</label><br />
-        <input type="text" id="fname" name="fname" /><br />
-        <label for="lname">Last name:</label><br />
+        <label for="name">Name</label><br />
         <input type="text" id="lname" name="lname" /><br />
         <label for="email">Email:</label><br />
         <input type="text" id="lname" name="email" /><br />
         <label for="lname">Message:</label><br />
-        <input type="text" id="message" name="message" /><br />
-        <input type="submit" value="Submit" /><br />
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input id="submit" type="submit" value="Submit">
       </form-group>
     </form>
   </div>
-</div>
-  </body>
+  </div>
+</body>
+
 </html>

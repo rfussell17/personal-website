@@ -1,0 +1,15 @@
+.large-thumb {
+  float: left;
+  width: 35%;
+  margin-left: 10%;
+}
+
+.description {
+  float: right;
+  width: 35%;
+  margin-right: 10%;
+}
+
+h3 {
+  text-align: center;
+}
