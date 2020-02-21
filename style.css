@@ -10,7 +10,6 @@ body {
   float: right;
   text-decoration: none;
   padding-right: 6em;
-  
 }
 
 .navbar a {
@@ -27,8 +26,7 @@ a:visited {
   color: black;
 }
 
-.navbar a.active-page
-{
+.navbar a.active-page {
   font-weight: 400;
 }
 
@@ -47,9 +45,9 @@ a:visited {
   padding: 1em;
 }
 
-.img:hover{
+.img:hover {
   color: rgb(46, 44, 44);
-  text-shadow:rgb(65, 62, 62) 1px 0 1px;
+  text-shadow: rgb(65, 62, 62) 1px 0 1px;
 }
 
 .images {

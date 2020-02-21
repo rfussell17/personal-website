@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
   <title>Robin Fussell</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="about.css">
@@ -15,27 +16,27 @@
 
   <h4 id="title">
     <span id="name"><a href="index.html">Robin Fussell &lt/&gt</a></span>
-      <div class="navbar">
-        <a href="index.html">Projects </a>
-        <a href="about.html">About </a>
-        <a href="contact.html" class='active-page'>Contact </a>
+    <div class="navbar">
+      <a href="index.html">Projects </a>
+      <a href="about.html">About </a>
+      <a href="contact.html" class='active-page'>Contact </a>
     </div>
   </h4>
-  
 
-  <div class="form-body">
-    <form id="form" action="contact.php" method="POST">
+
+  <div id="form-body">
+    <form class="form" action="contactform.php" method="post">
       <h3>CONTACT</h3>
       <div id="form-container"></div>
       <form-group>
         <label for="name">Name</label><br />
-        <input type="text" id="name" name="name" /><br />
+        <input type="text" id="name" name="name" required /><br />
         <label for="name">Subject</label><br />
-        <input type="text" id="subject" name="subject" /><br />
+        <input type="text" id="subject" name="subject" required /><br />
         <label for="email">Email:</label><br />
-        <input type="text" id="email" name="email" /><br />
+        <input type="text" id="email" name="email" required /><br />
         <label for="lname">Message:</label><br />
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
         <input id="submit" type="submit" value="submit">
       </form-group>
     </form>
