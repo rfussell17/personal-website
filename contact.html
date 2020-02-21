@@ -22,17 +22,19 @@
   
 
   <div class="form-body">
-    <form id="form">
+    <form id="form" action="contact.php" method="POST">
       <h3>CONTACT</h3>
       <div id="form-container"></div>
       <form-group>
         <label for="name">Name</label><br />
-        <input type="text" id="lname" name="lname" /><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="name">Subject</label><br />
+        <input type="text" id="subject" name="subject" /><br />
         <label for="email">Email:</label><br />
-        <input type="text" id="lname" name="email" /><br />
+        <input type="text" id="email" name="email" /><br />
         <label for="lname">Message:</label><br />
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input id="submit" type="submit" value="Submit">
+        <input id="submit" type="submit" value="submit">
       </form-group>
     </form>
   </div>
