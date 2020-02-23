@@ -35,19 +35,16 @@ p {
   .description {
     max-width: 75%;
     float: left;
-    margin-left: 5%;
   }
 }
 
 @media screen and (max-width: 700px) {
   .large-thumb {
     max-width: 100%;
-    margin-left: 5%;
   }
   .description {
     max-width: 100%;
     float: left;
-    margin-left: 5%;
   }
   .navbar a {
     color: black;
