@@ -29,36 +29,33 @@ a:link {
 }
 
 .container-fluid {
-padding: 4rem;
-
+padding: 2rem;
 }
 
-/*
-
-.img {
-  float: left;
-  min-width: 30%;
+.img-fluid {
   padding: 1em;
   transition: all .2s ease-in-out;
 }
 
-.img:hover {
+.img-fluid:hover{
   color: rgb(46, 44, 44);
   text-shadow: rgb(65, 62, 62) 0px 0 1px;
   transform: scale(1.01);
 }
 
-.images {
-  margin-top: 5em;
+.row.display-flex {
+  display: flex;
   flex-wrap: wrap;
-  padding-left: 10em;
-  color: black;
 }
-*/
+.thumbnail {
+  height: 100%;
+}
+
+
+
 
 .appName {
   text-align: center;
-  padding-right: 6em;
   font-weight: 100; 
   padding-bottom: 3em;
   color: black;

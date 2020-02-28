@@ -10,12 +10,13 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="about.css">
   <link rel="stylesheet" type="text/css" href="contact.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
 
- <nav class="navbar navbar-light navbar-expand-md">
+  <nav class="navbar navbar-light navbar-expand-md">
     <a href="index.html" id="name">Robin Fussell &lt/&gt</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-links">
       <span class="navbar-toggler-icon"></span>
@@ -23,113 +24,82 @@
     <div class="collapse navbar-collapse" id="navbar-links">
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
-         <a href="index.html" class="nav-link">Projects </a>
+          <a href="index.html" class="nav-link">Projects </a>
         </li>
         <li class="nav-item">
-         <a href="about.html" class="nav-link">About </a>
+          <a href="about.html" class="nav-link">About </a>
         </li>
         <li class="nav-item">
-         <a href="contact.html" class="nav-link">Contact </a>
+          <a href="contact.html" class="nav-link">Contact </a>
         </li>
       </ul>
     </div>
-   </nav>
+  </nav>
 
-   <section class="container-fluid">
-     <div class="row justify-content-around">
-       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <a href="projects/expense.html" alt="image of an expense tracker app">
-          <img class="img-fluid" src="images/expense.png"/>
-          <p class="appName">Expense-Tracker</p>
-        </a>
-       </div>
-       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+  <section class="container-fluid">
+    <div class="row display-flex justify-content-around">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
         <a href="projects/expense.html" alt="image of an expense tracker app">
           <img class="img-fluid" src="images/expense.png" />
           <p class="appName">Expense-Tracker</p>
         </a>
-       </div>
-       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <a href="projects/expense.html" alt="image of an expense tracker app">
-          <img class="img-fluid" src="images/expense.png"  />
-          <p class="appName" >Expense-Tracker</p>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+        <a href="projects/todo.html" alt="image of a todo list app">
+          <img class="img-fluid" src="images/finalToDo.png" />
+          <p class="appName">To-Do List</p>
         </a>
-       </div>
-     </div>
-     <div class="row justify-content-around">
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-       <a href="projects/expense.html" alt="image of an expense tracker app">
-         <img class="img-fluid" src="images/expense.png"/>
-         <p class="appName">Expense-Tracker</p>
-       </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-       <a href="projects/expense.html" alt="image of an expense tracker app">
-         <img class="img-fluid" src="images/expense.png" />
-         <p class="appName">Expense-Tracker</p>
-       </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-       <a href="projects/expense.html" alt="image of an expense tracker app">
-         <img class="img-fluid" src="images/expense.png"  />
-         <p class="appName">Expense-Tracker</p>
-       </a>
       </div>
     </div>
-   </section>
-
-  <!--
-  <h4 id="title">
-    <span id="name"><a href="index.html">Robin Fussell &lt/&gt</a>
-    <div class="navbar">
-      <a href="index.html" class='active-page'>Projects </a>
-      <a href="about.html">About </a>
-      <a href="contact.html">Contact </a>
-    </div>
-  </h4>
-
-  <div class="images">
-    <div class="img">
-      <a href="projects/expense.html" alt="image of an expense tracker app">
-        <img src="images/expense.png" class="responsive" height="300" width="400" />
-        <p class="appName">Expense-Tracker</p>
-      </a>
-    </div>
-    <div class="img">
-      <a href="projects/todo.html" alt="image of a todo list app">
-        <img src="images/finalToDo.png" class="responsive" height="300" width="400" />
-        <p class="appName">To-Do List</p>
-      </a>
-    </div>
-    <div class="img">
-      <a href="projects/chat.html" alt="Image of a chat messenger service app">
-        <img src="images/photo.jpg" class="responsive" height="300" width="400" />
-        <p class="appName">Chat-App</p>
-      </a>
-    </div>
-    <div class="img">
-      <a href="projects/pomodoro.html" alt="Image of pomodoro timer app">
-        <img src="images/pomoCropped.png" class="responsive" height="300" width="400" />
-        <p class="appName">Pomodoro Timer</p>
-      </a>
-    </div>
-    <div class="img">
-      <a href="projects/snake.html" alt="image of a snake game app">
-        <img src="images/snake.png" class="responsive" height="300" width="400" />
-        <p class="appName">Snake Game</p>
-      </a>
-    </div>
-    <div class="img">
-      <a href="projects/clock.html" alt="image of a digital clock app">
-        <img src="images/thumb.jpg" class="responsive" height="300" width="400" />
-        <p class="appName">Digital Clock App</p>
-      </a>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+        <a href="projects/chat.html" alt="Image of a chat messenger service app">
+          <img class="img-fluid" src="images/photo.jpg" />
+          <p class="appName">Chat-App</p>
+        </a>
+      </div>
     </div>
   </div>
-  -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <div class="row display-flex justify-content-around">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+        <a href="projects/pomodoro.html" alt="Image of pomodoro timer app">
+          <img class="img-fluid" src="images/pomoCropped.png" />
+          <p class="appName">Pomodoro Timer</p>
+        </a>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+        <a href="projects/snake.html" alt="image of a snake game app">
+          <img class="img-fluid" src="images/snake.png" />
+          <p class="appName">Snake Game</p>
+        </a>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="thumbnail">
+        <a href="projects/clock.html" alt="image of a digital clock app">
+          <img class="img-fluid" src="images/thumb.jpg" />
+          <p class="appName">Digital Clock App</p>
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
