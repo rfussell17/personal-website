@@ -6,9 +6,9 @@ input, select, textarea {
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
+  align-content: center;
 }
-/*
+
 #submit {
   background-color: rgb(27, 168, 31);
   color: white;
@@ -16,13 +16,10 @@ input, select, textarea {
 }
 
 .navbar {
-  float: right;
   text-decoration: none;
-  padding-right: 6em;
 }
 
 .navbar a {
-  padding-left: 25px;
   color: black;
 }
 
@@ -35,13 +32,6 @@ a:visited {
   color: black;
 }
 
-#title {
-  font-weight: 100;
-  margin: 40px;
-  padding-right: 5%;
-  padding-left: 9em;
-  padding-top: 45px;
-}
 
 a:link {
   text-decoration: none;
@@ -51,5 +41,3 @@ h3 {
   font-weight: 100;
   padding-bottom: 1em;
   }
-
-  */

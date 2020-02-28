@@ -15,17 +15,12 @@ body {
   padding: 3rem;
 }
 
-
 a:visited {
   color: black;
 }
 
 a:link {
   text-decoration: none;
-}
-
-.navbar a.active-page {
-  font-weight: 400;
 }
 
 .container-fluid {
@@ -43,13 +38,6 @@ padding: 2rem;
   transform: scale(1.01);
 }
 
-.row.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.thumbnail {
-  height: 100%;
-}
 
 
 
