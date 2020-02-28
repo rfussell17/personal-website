@@ -6,64 +6,6 @@ body {
   font-weight: 100;
   margin: 0 auto;
   position: relative;
-}
-/*
-
-h3 {
-font-weight: 100;
-padding-bottom: 1em;
+  align-items: center;
 }
 
-#bottom {
-  padding-bottom: 30em;
-}
-
-.container-a {
-  width: 45%;
-  padding-left: 30em;
-  padding-top: 3em;
-  }
-
-
-  .navbar {
-    float: right;
-    text-decoration: none;
-    padding-right: 6em;
-  }
-  
-  .navbar a {
-    padding-left: 25px;
-    color: black;
-  }
-
-  .navbar a {
-    padding-left: 25px;
-    color: black;
-  }
-  
-  .navbar a:active {
-    color: black;
-    font-weight: 400;
-  }
-
-  .navbar a.active {
-    color: black;
-    font-weight: 400;
-  }
-  
-  a:visited {
-    color: black;
-  }
-  
-  #title {
-    font-weight: 100;
-    margin: 40px;
-    padding-right: 5%;
-    padding-left: 9em;
-    padding-top: 45px;
-  }
-  
-  a:link {
-    text-decoration: none;
-  }
-  */
