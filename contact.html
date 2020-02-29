@@ -10,12 +10,13 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="about.css">
   <link rel="stylesheet" type="text/css" href="contact.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
 
- <nav class="navbar navbar-light navbar-expand-md">
+  <nav class="navbar navbar-light navbar-expand-md">
     <a href="index.html" id="name">Robin Fussell &lt/&gt</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-links">
       <span class="navbar-toggler-icon"></span>
@@ -23,42 +24,73 @@
     <div class="collapse navbar-collapse" id="navbar-links">
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
-         <a href="index.html" class="nav-link">Projects </a>
+          <a href="index.html" class="nav-link">Projects </a>
         </li>
         <li class="nav-item">
-         <a href="about.html" class="nav-link">About </a>
+          <a href="about.html" class="nav-link">About </a>
         </li>
         <li class="nav-item">
-         <a href="contact.html" class="nav-link">Contact </a>
+          <a href="contact.html" class="nav-link">Contact </a>
         </li>
       </ul>
     </div>
-   </nav>
+  </nav>
+
+  <script>
+    function _(id) { return document.getElementById(id) }
+    function submitForm() {
+      _("submit").disabled = true;
+      var formdata = new FormData();
+      formdata.append("name", _("name").value);
+      formdata.append("email", _("email").value);
+      formdata.append("message", _("message").value);
+      var ajax = new XMLHttpRequest();
+      ajax.open("POST", "parser.php");
+      ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4 && ajax.status == 200) {
+          if (ajax.responseText == "success") {
+            _("my_form").innerHTML = '<h2>Thanks ' + _("name").value + ', your message has been sent.</h2>';
+          } else {
+            _("status").innerHTML = ajax.responseText;
+            _("submit").disabled = false;
+          }
+        }
+      }
+      ajax.send(formdata);
+    }
+  </script>
 
 
   <div class="jumbotron bg-light">
     <div class="container">
-    <form class="form" action="contactform.php" method="post">
-      <h3>CONTACT</h3>
-      <div id="form-container"></div>
-      <form-group>
-        <label for="name">Name</label><br />
-        <input type="text" id="name" name="name" required /><br />
-        <label for="name">Subject</label><br />
-        <input type="text" id="subject" name="subject" required /><br />
-        <label for="email">Email:</label><br />
-        <input type="text" id="email" name="email" required /><br />
-        <label for="lname">Message:</label><br />
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
-        <input id="submit" type="submit" value="submit">
-      </form-group>
-    </form>
+      <form id="my_form" onsubmit="submitForm()"; return false;>
+        <h3>CONTACT</h3>
+        <div id="form-container"></div>
+        <form-group>
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" required /><br />
+          <label for="name">Subject</label><br />
+          <input type="text" id="subject" name="subject" required /><br />
+          <label for="email">Email:</label><br />
+          <input type="text" id="email" name="email" required /><br />
+          <label for="lname">Message:</label><br />
+          <textarea id="message" name="message" placeholder="Write something.." style="height:170px"
+            required></textarea>
+          <input id="submit" type="submit" value="submit"> <span id="status"></span>
+        </form-group>
+      </form>
+    </div>
   </div>
-</div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
